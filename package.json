@@ -1,0 +1,18 @@
+{
+  "name": "action-setup-waypoint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.js --bundle --platform=node --target=node16 --outfile=dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcjun97/action-setup-waypoint.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1",
+    "@actions/tool-cache": "^2.0.1"
+  }
+}

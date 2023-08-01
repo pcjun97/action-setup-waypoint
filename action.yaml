@@ -1,0 +1,16 @@
+name: Setup waypoint
+description: Sets up waypoint in your GitHub Actions workflow
+branding:
+  icon: terminal
+  color: green
+inputs:
+  github-token:
+    description: GitHub token to auth against GitHub's API
+    required: true
+  version:
+    description: Version of Waypoint to install
+    default: latest
+    required: false
+runs:
+  using: node16
+  main: dist/index.js
